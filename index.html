@@ -19,37 +19,46 @@
         <section class="fylo-container">
             <img class="logo" src="images/logo.svg" alt="Fylo logo" />
             <section class="icons">
-                <div class="icon-img">
-                    <img src="images/icon-document.svg" alt="" aria-hidden="true" />
-                </div>
-                <div class="icon-img">
-                    <img src="images/icon-folder.svg" alt="" aria-hidden="true" />
-                </div>
-                <div class="icon-img">
-                    <img src="images/icon-upload.svg" alt="" aria-hidden="true" />
-                </div>
+                <button onclick="openFolder()">
+                    <div class="icon-img">
+                        <img src="images/icon-document.svg" aria-hidden="true" />
+                        <input type="file" id="fileInput" style="display: none;" accept="image/*">
+                    </div>
+                </button>
+                <button onclick="openFolder()">
+                    <div class="icon-img">
+                        <img src="images/icon-folder.svg" aria-hidden="true" />
+                        <input type="file" id="fileInput" style="display: none;" accept="image/*">
+                    </div>
+                </button>
+                <button>
+                    <div class="icon-img">
+                        <img src="images/icon-upload.svg" aria-hidden="true" />
+                    </div>
+                </button>
             </section>
         </section>
 
         <!-- Storage Container -->
         <section class="storage-container">
-            <h1>You've used <span>815 GB</span> of your storage</h1>
+            <h1>You've used <span id="usedStorage">0 KB</span> of your storage</h1>
             <!-- Progress Bar -->
             <section class="progress-bar">
-                <div class="gradient-bar">
+                <div id="gradient-bar">
                     <div class="dot-container">
                         <div class="dot"></div>
                     </div>
                 </div>
             </section>
             <h2>
-                <span>0 GB</span>
-                <span>1000 GB</span>
+                <span id="spanUsedMG">0 KB</span>
+                <span>1000 KB</span>
             </h2>
-            
+
             <!-- GB left -->
             <section class="gb-left">
-                <p>185 <span>GB left</span></p>
+                <p id="storageLeft">1000</p> 
+                <span> KB left</span>
             </section>
         </section>
     </main>

@@ -71,6 +71,12 @@ main {
   gap: 2rem;
 }
 
+button{
+  background-color: hsl(228, 56%, 26%);
+  border: 0;
+  cursor: pointer;
+}
+
 .logo {
   width: 8.5rem;
   height: auto;
@@ -126,17 +132,18 @@ h1 span {
   padding: 1px;
 }
 
-.gradient-bar {
+#gradient-bar {
   display: flex;
   align-items: center;
   background: var(--gradient-bar);
   background: var(--gradient);
   border-radius: 50px;
   filter: saturate();
-  width: 74%;
+  width: 3%;
   height: 0.8rem;
   position: relative;
 }
+
 .dot-container {
   position: relative;
   display: inline-flex;
@@ -236,3 +243,4 @@ h2 {
     display: none;
   }
 }
+
